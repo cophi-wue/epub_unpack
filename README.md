@@ -1,8 +1,8 @@
-# EpubExtractor Pro (epx-pro)
+# Epub_unpack (epx-pro)
 
-EpubExtractor Pro is an optimized, integrated pipeline designed for large-scale conversion of German dime novel EPUBs into JSON. It consolidates extraction, semantic tagging, and narrative classification into a single high-performance workflow with robust monitoring.
+Epub_unpack is an optimized, integrated pipeline designed for large-scale conversion of German dime novel EPUBs into JSON. It consolidates extraction, semantic tagging, and narrative classification into a single high-performance workflow with robust monitoring.
 
-The original version of this tool: https://github.com/LennartKeller/epub_unpack
+Epub_unpack was developped by Lennart Keller and the classifier by Thora Hagen. The tool was enhanced and made ready for HPC infrastructure by Marina Spielberg.
 
 ## Key Features
 - **Integrated Pipeline:** Runs extraction, type inference, and classification in one pass.
