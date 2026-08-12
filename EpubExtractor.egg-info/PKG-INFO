@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: EpubExtractor
+Version: 0.1.0
+Author: Lennart Keller
+Author-email: lennartkeller@gmail.com
+Requires-Dist: Click
+Requires-Dist: lxml
+Requires-Dist: beautifulsoup4
+Requires-Dist: saxonche
+Requires-Dist: css_inline
+Requires-Dist: ebooklib @ git+https://github.com/LennartKeller/ebooklib.git
+Requires-Dist: tqdm
+Requires-Dist: Jinja2
+Requires-Dist: joblib
+Requires-Dist: chardet
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

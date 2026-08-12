@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"
+  type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>{{title}}</title>
+                <author>
+                    {%- for a in author %}
+                    <persName>{{a}}</persName>
+                    {%- endfor %}
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>{{publisher_stmt}}</publisher>
+                {%- if date %}
+                    <date when="{{ date }}">{{date}}</date>
+                {%- endif %}
+                {%- if identifier_type %}
+                <idno type="{{ identifier_type }}">{{identifier}}</idno>
+                {%- endif %}
+                <availability>
+                    <p>{{rights_stmt}}</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>                
+                <p>{{src_file_path}}</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="{{language_code}}"/>
+            </langUsage>
+        </profileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="epx" version="{{extractor_version}}">
+                    <label>EPub Extractor</label>
+                    <p>Used to generate this file from the original EPub publication</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <!--<revisionDesc>
+            <listChange>
+                {% for change in changes %}
+                <change when="" who="TitleBasedTypeInference">
+                    <p>Use hard-coded rules to infer section types based in their titles.</p>
+                </change>
+                {% endfor %}
+            </listChange>
+        </revisionDesc>-->
+    </teiHeader>
+    <text>
+        <body>
+            {% for entry in content recursive %}
+                {%- if entry['text'] %}
+                <div type="epub-html">{{ entry['text']|safe}}</div>
+                {%- endif %}
+                {%- if entry['content'] %}
+                <div type="epub-section">
+                    <ul>{{ loop(entry['content'])}}</ul>
+                </div>
+                {%- endif %}
+            {% endfor %}
+        </body>
+    </text>
+</TEI>

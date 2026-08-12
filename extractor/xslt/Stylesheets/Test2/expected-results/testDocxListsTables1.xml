@@ -1,0 +1,126 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Testing Lists</title>
+            <author>Sebastian Rahtz</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>2012-10-01</date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <p>unknown</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Converted from a Word document</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application xml:id="docxtotei" ident="TEI_fromDOCX" version="7.57.0a">
+               <label>DOCX to TEI</label>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <revisionDesc>
+         <listChange>
+            <change>
+               <date/>
+               <name>Sebastian Rahtz</name>
+            </change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <div>
+               <head>Simple ordered</head>
+               <list rend="numbered">
+                  <item>Cats</item>
+                  <item>Bats</item>
+                  <item>Flats</item>
+               </list>
+               <p>Done</p>
+            </div>
+            <div>
+               <head>Simple unordered</head>
+               <list rend="bulleted">
+                  <item>Cats</item>
+                  <item>Bats</item>
+                  <item>Flats</item>
+               </list>
+               <p>Done</p>
+            </div>
+            <div>
+               <head>Nested and ordered</head>
+               <list rend="numbered">
+                  <item>Cats</item>
+                  <item>Dogs<list rend="numbered">
+                        <item>Alsatians</item>
+                        <item>Greyhounds</item>
+                     </list>
+                  </item>
+                  <item>Sheep</item>
+               </list>
+               <p>done</p>
+            </div>
+            <div>
+               <head>Nested and unordered</head>
+               <list rend="bulleted">
+                  <item>Cats</item>
+                  <item>Dogs<list rend="bulleted">
+                        <item>Alsatians</item>
+                        <item>Greyhounds</item>
+                     </list>
+                  </item>
+                  <item>sheep</item>
+               </list>
+               <p>done</p>
+            </div>
+            <div>
+               <head>Now insert a List Number</head>
+               <list rend="numbered">
+                  <item>Cats</item>
+                  <item>Bats</item>
+                  <item>Flats</item>
+               </list>
+            </div>
+            <div>
+               <head>List Number 2</head>
+               <list rend="numbered">
+                  <item>Cats</item>
+                  <item>Bats</item>
+                  <item>Flats</item>
+               </list>
+            </div>
+            <div>
+               <head>List Bullet</head>
+               <list rend="bulleted">
+                  <item>Cats</item>
+                  <item>Bats</item>
+                  <item>Flats</item>
+               </list>
+               <table rend="rules">
+                  <row>
+                     <cell style="text-align: left;">A</cell>
+                     <cell style="text-align: left;">B</cell>
+                     <cell style="text-align: left;">C</cell>
+                     <cell style="text-align: left;">D</cell>
+                     <cell style="text-align: left;">E</cell>
+                  </row>
+                  <row>
+                     <cell style="text-align: left;">1</cell>
+                     <cell style="text-align: left;">2</cell>
+                     <cell style="text-align: left;">3</cell>
+                     <cell style="text-align: left;">4</cell>
+                     <cell style="text-align: left;">5</cell>
+                  </row>
+               </table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

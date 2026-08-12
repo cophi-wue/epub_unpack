@@ -1,0 +1,2 @@
+[console_scripts]
+epx = extractor.cli:cli

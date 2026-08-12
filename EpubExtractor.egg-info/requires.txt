@@ -1,0 +1,11 @@
+Click
+lxml
+beautifulsoup4
+saxonche
+css_inline
+ebooklib @ git+https://github.com/LennartKeller/ebooklib.git
+tqdm
+Jinja2
+joblib
+chardet
+scikit-learn

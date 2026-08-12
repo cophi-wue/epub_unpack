@@ -1,0 +1,27 @@
+# VS Code settings
+.vscode/
+
+# Python cache & build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# corpora / test files
+*.json
+*.epub
+
+#other
+dnb_sample/
+**/dnb_sample/
